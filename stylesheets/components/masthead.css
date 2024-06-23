@@ -1,1 +1,90 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "menuandsearch . actions"
+        ". technologies ."
+        "date logo paper"
+    ;
+}
+
+.masthead__menu-and-search {
+    /* display: flex; */
+    grid-area: menuandsearch;
+}
+
+.masthead__actions {
+    grid-area: actions;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.masthead__technologies {
+    grid-area: technologies;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2; */
+}
+
+.technologies {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+.technologies>span {
+    margin: 0px 2px;
+}
+
+.masthead__date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+}
+
+.masthead__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.masthead__paper {
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding-bottom: 11px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.menu-and-search {
+    display: inline-block;
+    font-size: 11px;
+    padding: 7px 9px 7px 7px;
+    /* padding-left: 20px; */
+}
+
+.menu-and-search:hover {
+    background-color: #e2e2e2;
+}

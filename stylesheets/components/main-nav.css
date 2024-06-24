@@ -1,1 +1,21 @@
 /* Your code here */
+.main {
+    position: relative;
+}
+
+.main ul {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* max-width: 70%; */
+    margin: 0px auto;
+}
+
+.main ul li {}
+
+.main ul li a {
+    font-size: 12px;
+    font-weight: bold;
+}

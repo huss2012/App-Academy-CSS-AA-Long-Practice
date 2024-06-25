@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* max-width: 70%; */
+    max-width: 50%;
     margin: 0px auto;
 }
 

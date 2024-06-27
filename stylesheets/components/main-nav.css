@@ -9,11 +9,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    max-width: 50%;
+    /* max-width: 50%; */
     margin: 0px auto;
 }
-
-.main ul li {}
 
 .main ul li a {
     font-size: 12px;

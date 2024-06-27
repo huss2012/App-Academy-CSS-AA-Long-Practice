@@ -7,8 +7,9 @@
   padding: 0.5em;
   position: absolute;
   right: 5px;
-  top: 2.5em;
+  top: 3.8em;
   width: 200px;
+  z-index: 1;
 }
 
 
@@ -30,8 +31,13 @@
   margin: .5em;
   padding: .5em;
   text-transform: uppercase;
+  position: relative;
 }
 
 .pref__section-link:hover {
   background-color: #dedede;
+}
+
+.pref--hidden {
+  display: none;
 }
